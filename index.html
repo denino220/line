@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Giraffe Population Decline, 1980–2022</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+      text-align: center;
+    }
+
+    #container {
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #264653;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Giraffe Population Decline, 1980–2022</h2>
+  <div id="container"></div>
+
+  <script>
+    Highcharts.chart('container', {
+      chart: {
+        type: 'line',
+        backgroundColor: '#ffffff',
+      },
+      title: {
+        text: ''
+      },
+      xAxis: {
+        categories: ['1980s', '2000', '2010', '2022'],
+        title: {
+          text: 'Year'
+        }
+      },
+      yAxis: {
+        title: {
+          text: 'Estimated Population'
+        },
+        min: 100000
+      },
+      tooltip: {
+        valueSuffix: ' giraffes'
+      },
+      series: [{
+        name: 'Giraffe Population',
+        data: [155000, 140000, 125000, 117000],
+        color: '#2a9d8f',
+        marker: {
+          enabled: true,
+          radius: 5
+        }
+      }],
+      credits: {
+        enabled: false
+      }
+    });
+  </script>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
